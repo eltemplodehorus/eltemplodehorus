@@ -1,9 +1,10 @@
 
 
 # DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:eltemplodehorus.com
-RewriteEngine on
+# Activar HTTPS
+RewriteEngine On
 RewriteCond %{HTTPS} !=443
-RewriteRule ^(.*)$ https://www.eltemplodehorus.com/$1 [R=301,L]
+RewriteRule ^(.*)$ http:// www.eltemplodehorus.com/$1 [R=301,L]
 # DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:eltemplodehorus.com
 
 # DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:eltemplodehorus.com
