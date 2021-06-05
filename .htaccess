@@ -1,0 +1,12 @@
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:eltemplodehorus.com
+RewriteEngine on
+RewriteCond %{HTTPS} !=443
+RewriteRule ^(.*)$ https://www.eltemplodehorus.com/$1 [R=301,L]
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:eltemplodehorus.com
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:eltemplodehorus.com
+Header always set Content-Security-Policy: upgrade-insecure-requests
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:eltemplodehorus.com
+
